@@ -19,6 +19,26 @@ npm install vue-regex-input
 </vue-regex-input>
 ```
 
+### Add to build
+
+As this project uses the newer vue-loader v13+ you need to import the module in a slightly different way.
+https://github.com/vuejs/vue-loader/releases/tag/v13.0.0
+
+```javascript
+// before
+const Foo = require('./Foo.vue')
+
+// after
+const Foo = require('./Foo.vue').default
+
+// alternatively just use the ES6 module style
+
+import vSelect from 'vue-regex-input';
+Vue.component( 'vue-regex-input', vSelect );
+
+```
+
+
 ## Development
 
 ### npm scripts
