@@ -1,5 +1,18 @@
 # vue-regex-input
 
+A vue input component that only allows input based on a passing regex
+
+## Quick start
+
+```html
+<vue-regex-input class="some-class"
+               :regExp="/^\d*(\.\d{0,2})?$/g" //match alphanumerics
+               @input="handleInput"
+               @change="handleChange"
+               v-model="val">
+</vue-regex-input>
+```
+
 ## Development
 
 ### npm scripts
