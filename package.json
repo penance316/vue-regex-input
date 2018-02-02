@@ -43,7 +43,7 @@
     "backbone-virtualized-listview": "0.6.2",
     "bluebird": "^3.3.4",
     "fast-binary-indexed-tree": "1.0.0",
-    "jquery": "2.2.4",
+    "jquery": "~> 3.0.0",
     "js-data": "2.9.0",
     "knockout": "3.4.0",
     "projection-grid": "^0.1.7",

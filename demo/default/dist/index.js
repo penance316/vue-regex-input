@@ -296,12 +296,34 @@ process.umask = function() { return 0; };
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
  // eslint-disable-line
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   components: {
     child: __WEBPACK_IMPORTED_MODULE_0_vue_regex_input___default.a
+  },
+  data: function data() {
+    return {
+      val: '',
+      val2: ''
+    };
   }
 });
 
@@ -9442,15 +9464,49 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("h3", [_vm._v("VueRegexInput - default demo")]),
-      _vm._v(" "),
-      _c("child")
-    ],
-    1
-  )
+  return _c("div", [
+    _c("h3", [_vm._v("VueRegexInput")]),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _c("h4", [_vm._v("Currency demo")]),
+        _vm._v("\n    £\n    "),
+        _c("child", {
+          attrs: { regExp: /^\d*(\.\d{0,2})?$/g },
+          model: {
+            value: _vm.val,
+            callback: function($$v) {
+              _vm.val = $$v
+            },
+            expression: "val"
+          }
+        }),
+        _vm._v("\n    val: " + _vm._s(_vm.val) + "\n  ")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _c("h4", [_vm._v("Alpha Characters demo")]),
+        _vm._v("\n    £\n    "),
+        _c("child", {
+          attrs: { regExp: /^[a-zA-Z]*$/g },
+          model: {
+            value: _vm.val2,
+            callback: function($$v) {
+              _vm.val2 = $$v
+            },
+            expression: "val2"
+          }
+        }),
+        _vm._v("\n    val: " + _vm._s(_vm.val2) + "\n  ")
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
