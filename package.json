@@ -1,7 +1,14 @@
 {
   "name": "vue-regex-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index",
+  "license": "MIT",
+  "repository": "penance316/vue-regex-input",
+  "author": {
+    "name": "Nero Denney",
+    "email": "penance316@gmail.com",
+    "url": "nerodenney.com"
+  },
   "scripts": {
     "build": "webpack",
     "test": "jest --setupTestFrameworkScriptFile=raf/polyfill",
