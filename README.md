@@ -2,6 +2,12 @@
 
 A vue input component that only allows input based on a passing regex
 
+## Install
+
+```bash
+npm install vue-regex-input
+```
+
 ## Quick start
 
 ```html
