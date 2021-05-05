@@ -724,7 +724,7 @@ var render = function() {
           _vm.val = $event.target.value
         },
         function($event) {
-          _vm.updateValue($event.target.value)
+          return _vm.updateValue($event.target.value)
         }
       ],
       change: _vm.emitChange
