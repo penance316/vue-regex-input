@@ -1,6 +1,6 @@
 {
   "name": "vue-regex-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index",
   "license": "MIT",
   "repository": "penance316/vue-regex-input",
